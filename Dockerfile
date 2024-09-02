@@ -22,7 +22,7 @@ LABEL org.opencontainers.image.source="https://github.com/AVENTER-UG/"
 
 ENV DOCKER_RUNNING=true
 
-RUN apk add --no-cache ca-certificates
+RUN apk add --no-cache ca-certificates curl
 RUN adduser -S -D -H -h /app appuser
 USER appuser
 
